@@ -16,102 +16,50 @@
     backgroundcolor=\color{black!5}, % set backgroundcolor
     basicstyle=\footnotesize,% basic font setting
 }
-\title{Project Detail}
+\title{Directed Study II - Summer 2016}
 \author{Kian Davoudi EIT, MASC, PhD Candidate}
-\date{March 3rd 2016}
+\abstract 
+The propose of this course is to complete the DD I. The ultimate goal is to identify the possible solution to detect an object in the video stream on the iOS device. In the literature, one could find number of object detection algorithms available. However, although there are much sophisticated algorithms, but, individually their performance is being varied based on the application. Thus, the recommended methodology that I propose in this course, is fist to conduct a survey for applicable solution to object detection in video stream. 
+
+Based on the experience from edge detection aoglrotihm on the iOS device. I make a choice to conduct a parallel development, on iOS as well as OSx. 
+
+
+\section{Detection of Photoplethysmography from iOS camera}
+The algorithm should take an UIImage from iOS AVFoundation inputDevice. Using delegate method, to process UIImage. The function shall estimate the  RGBA from each UIIMage. This is the basic Image processing method that we will use to extract the intensity of the RGBA. Based on tihs value, I will design PPG extraction algorithm. 
+
+
+\section{Background Information}
+\subsection{RGBA primary image type}
+RGBA stands for red green blue alpha. While it is sometimes described as a color space, it is actually simply a use of the RGB color model, with extra information. The color is RGB, and may belong to any RGB color space, but an integral alpha value as invented by Catmull and Smith between 1971 and 1972 enables alpha compositing. The inventors named alpha after the Greek letter in the classic linear interpolation formula α A + (1 − α) B.
+
+The alpha channel is normally used as an opacity channel. If a pixel has a value of 0 in its alpha channel, it is fully transparent (and, thus, invisible), whereas a value of 100 in the alpha channel gives a fully opaque pixel (traditional digital images). Values between 0 and 100 make it possible for pixels to show through a background like a glass, an effect not possible with simple binary (transparent or opaque) transparency. It allows easy image compositing.
+
+
+
+\section{MyOnwObservation}
+Here are my observations, and I would appreciate your feedback:
+
+I have been working on PPG for a long time, and i can almost conformably state that there is no much novel left to innovate with this traditional model that we are using. 
+I have came to conclusion, that as long as we continue working with tradition tools, such as matlab, offline data processing its relatively hard to contribute anything new to this field. 
+
+Now, I am really dedicated to proceed with my PhD, and I believe, that a radical change in direction is what is required at this point. Because, I believe that we need a realtime feedback device that we could rely on as a ultimate tool and start designing algorithms for that device. 
+
+Based on my study on machine vision algorithms, although there are many good and sophisticated algorithms in literature, but since the application varies, the efficiency of individual algorithm is being affected too. Thus, many suggest to define an algorithm for particular application. 
+
+OpenCv, is one of the good examples that has came to this conclusion, thus, they are collecting their effort in a platform that is accessible and modifiable on various platforms. 
+
+An other good example is the erfornace of the same algorithms that as used in Labview and Matlab, when I was planning to publish my first paper. The same algorithm with heigh pass filter and the same cut off frequency was providing significantly different results in lavbiew rather matlab. 
+
+We have had conversations with Farzad many times about that platform shall we use. This could be discussed further to come to a suction, however, I believe, given the examples that I have seen in App store, such as xxx, and PPG device could be established and next sophisticated algorithms could be used to perfect performance of such device. 
+
+For that reason I would like to recommend focusing on an app for PPG accusation, or potentially SCG or EEG acquisition on the mobile device. 
+One we have this device really, then I plan to apply all statistical methodologies on this device. 
+
+There are numbers of the people trying to extract PPG from iOS but, the question, is which one can provide a more reliable application for this PPG. They have realied soley on HRV, which is something, but what I have is the heahmorrage which is so rare to consuldt. This is my novelty. 
+
 
 \begin{document}
 \maketitle
-
-%============================================Section+Divider========================================
-\section{CinCPaper}
-\begin{enumerate}
-\item Extraction of RIIV from 10 Subjects: 
-\item I got the names of the channels-> Hence you are able to continue. 
-\item Extraction of HR from 10 Subject
-\item Bland and Altman Analysis for the top items. 
-\end{enumerate}
-
-%=======================================Section+Divider===Directed Study Spring 2016===============================
-\section{Directed Study 2016 Spring}
-\begin{enumerate}
-\item Writing DD report to Bozena
-\item Writing CinC paper 
-\item Proposing the DD II, or get a semester off for summer
-\item BackEnd server for iOS app
-\item PPG sensor: I managed to convine that a new sensor is going to be valuable. Then she asked to have the control over IP, by desining it within her people. No problem for me, this is the line, if I want something I will do it. I dont have a lot of time to design it myself, and I dont want to spend my years in optic dessing. I will try to from the idea in a peace of the paper. 
-\item Read Light intensity via Camera then process the changes in OpenCV OMG, lots of appplications, then I can read the 
-\end{enumerate}
-\subsection{ActionItems}
-\begin{enumerate}
-\item PPG sensor: I will have to study the algorithm and the architecture. I can propose a architecture for the sensor, and demand it to build myself or someone else, if I can use him to get to my goal faster which is an operational PPG sensor end to end system. Plasmic based sensors.  is the keyword. 
-\item I have to focus: 
-\item What is going to be next DD, Please document it. 
-\item Dependency for MSER: 
-\item Reading the PPG from camera
-http://stackoverflow.com/questions/22753165/detecting-if-iphone-is-in-a-dark-room/
-\item OpenCV Peak Detection
-\item Finding items with OpenCV
-http://stackoverflow.com/questions/11424002/how-to-detect-simple-geometric-shapes-using-opencv
-\item Obtaining Luminosity from an iOS Camera: http://b2cloud.com.au/tutorial/obtaining-luminosity-from-an-ios-camera/
-\end{enumerate}
-
-\subsection{iOS App}
-Kian, I have to figure out the MSER. End of the story. 
-Problem is how can I build and image template. Next, how can I view the results.
-Once it is observed, then use the teplate on an image.
-You can have access to heart rate data with a spesific intervals: \hyperlink{https://www.raywenderlich.com/117433/accessing-heart-rate-data-researchkit-study}{https://www.raywenderlich.com/117433/accessing-heart-rate-data-researchkit-study}
-[KD April1st 14:43] ok i can load an image to the controller and the bus repo. can play with those, next. can you extract MSER features from it? 
-
-
-\subsection{Algorithm for MSER Based on the tutorial}
-
-
-
-
-
-%============================================Section+Divider==UND================================
-\section{UND}
-\subsection{Joining Kouhyar's Team}
-\begin{enumerate}
-\item Transcript from SFU  Non a problem on March 30th 2016 I will do it. 
-\item Bachelor Transcripts ( Due on Raj at school SFU -  Friday April 1st) 
-\item TOEFL (Friday April 1st)
-\item THe problem is that I own 1500 to SFU, rediculous money, with this money, I can easily buy six months of the Freedmen on Whistler. I will do it at all costs. I will Ask Raj tomorrow to send the transcript (I will print it, and then ask her to send the whole pachage)
-
-\end{enumerate}
-%============================================Section+Divider==UND================================
-\section{Sage}
-Problem with the messaging: The response coming back from the internal controller checked in the javascript. The jsonresult. UserMessage is null!! Why? 
-
-
-
-
-
-\subsection{Credit Card}
-\begin{enumerate}
-\item Show Up messages: It seems that the the message does executes but does not have time to show up. Maybe some sort of service routine call
-\end{enumerate}
-
-\section{MS-DS-FaceBook-Google}
-This summer I have to focus and train myself. 
-
-\section{MD}
-By 2020 in the Med School
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \bibliographystyle{plain}
 \bibliography{references}
 \end{document}
